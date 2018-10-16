@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+	<trace enable="true"/>
+
+	<androidManifestUpdates>
+
+		<addAttribute tag="application" name="android:icon" value="@mipmap/ic_launcher" />
+		<!--addAttribute tag="application" name="android:roundIcon" value="@mipmap/ic_launcher" /-->
+
+	</androidManifestUpdates>
+
+	<prebuildCopies>
+		<copyFile src="$S(PluginDir)/../../Resources/background.png" dst="$S(BuildDir)/res/drawable/ic_background.png" />
+		<copyFile src="$S(PluginDir)/../../Resources/foreground.png" dst="$S(BuildDir)/res/mipmap/ic_foreground.png" />
+		<copyFile src="$S(PluginDir)/../../Resources/foreground_round.png" dst="$S(BuildDir)/res/mipmap/ic_foreground_round.png" />
+		<copyFile src="$S(PluginDir)/../../Resources/ic_launcher.xml" dst="$S(BuildDir)/res/mipmap-anydpi/ic_launcher.xml" />
+	</prebuildCopies>
+
+</root>
