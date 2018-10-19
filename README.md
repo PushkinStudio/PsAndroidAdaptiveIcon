@@ -1,6 +1,6 @@
 # PsAndroidAdaptiveIcon
 
-Adaptive icon support for Android. API level 26 REQUIRED
+Adaptive icons for android. API level 26 REQUIRED
 
 Files:
 	Resources/background.png,

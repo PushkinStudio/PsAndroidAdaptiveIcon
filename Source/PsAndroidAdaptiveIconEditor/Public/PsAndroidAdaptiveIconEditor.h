@@ -2,8 +2,9 @@
 #pragma once
 
 #include "Modules/ModuleManager.h"
+#include "PropertyEditorDelegates.h"
 
-class FPsAndroidAdaptiveIcon : public IModuleInterface
+class FPsAndroidAdaptiveIconEditor : public IModuleInterface
 {
 public:
 	/** IModuleInterface implementation */
@@ -12,6 +13,8 @@ public:
 	// End of IModuleInterface impl
 
 private:
+	void RegisterCustomClassLayout(FName ClassName, FOnGetDetailCustomizationInstance DetailLayoutDelegate );
+
 	UPROPERTY()
 	class UPsAndroidAdaptiveIconSettings* Settings;
 };

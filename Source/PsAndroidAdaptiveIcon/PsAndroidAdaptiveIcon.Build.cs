@@ -12,12 +12,7 @@ public class PsAndroidAdaptiveIcon : ModuleRules
 			{
 				"Core",
 				"CoreUObject",
-				"Engine",
-			});
-
-		PrivateDependencyModuleNames.AddRange(
-			new string[]
-			{
+				"Engine"
 			});
 
 		if (Target.Platform == UnrealTargetPlatform.Android)
