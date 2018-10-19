@@ -8,18 +8,19 @@
 	"EngineVersion" : "4.20.0",
 	"Description" : "Android adaptive icon support, REQUIRED android API 26",
 	"Category" : "Android",
-	"CanContainContent" : true,
+	"CanContainContent" : false,
 
 	"Modules" :
 	[
 		{
 			"Name" : "PsAndroidAdaptiveIcon",
 			"Type" : "Runtime",
-			"LoadingPhase": "Default",
-			"WhitelistPlatforms":
-			[
-				"Android"
-			]
+			"LoadingPhase": "PreDefault"
+		},
+		{
+			"Name" : "PsAndroidAdaptiveIconEditor",
+			"Type" : "Developer",
+			"LoadingPhase": "Default"
 		}
 	]
 }

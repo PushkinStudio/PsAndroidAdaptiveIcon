@@ -75,3 +75,7 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+Resources/background.png
+Resources/foreground.png
+Resources/foreground_round.png
+*.DS_Store
