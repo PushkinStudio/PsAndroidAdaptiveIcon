@@ -21,8 +21,8 @@ void FPsAndroidAdaptiveIconEditor::StartupModule()
 
 	if (SettingsModule != nullptr)
 	{
-		SettingsModule->RegisterSettings("Project", "Platforms", "AndroidAdaptiveIcon",
-				LOCTEXT("RuntimeSettingsName", "AndroidAdaptiveIcon"),
+		SettingsModule->RegisterSettings("Project", "Plugins", "AndroidAdaptiveIcon",
+				LOCTEXT("RuntimeSettingsName", "Android Adaptive Icon"),
 				LOCTEXT("RuntimeSettingsDescription", "Project settings for Android adaptive icon"),
 				GetMutableDefault<UPsAndroidAdaptiveIconSettings>());
 	}
