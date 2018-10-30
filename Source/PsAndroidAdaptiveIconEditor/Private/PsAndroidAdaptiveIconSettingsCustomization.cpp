@@ -24,7 +24,7 @@ void FPsAndroidAdaptiveIconSettingsCustomization::CustomizeDetails(IDetailLayout
 {
 	// Background
 	const FText DescBG(LOCTEXT("AndroidAdaptiveIconBackgroundLabel", "Anroid adaptive icon background"));
-	const FString ProjectIconBG_TargetImagePath = FPaths::ProjectPluginsDir() / TEXT("PsAndroidAdaptiveIcon") / TEXT("Resources") / TEXT("background.png");
+	const FString ProjectIconBG_TargetImagePath = FPaths::ProjectDir() / TEXT("Intermediate") / TEXT("Android") / TEXT("AdaptiveIcon") / TEXT("background.png");
 	FString ProjectIconBG_AutomaticImagePath = ProjectIconBG_TargetImagePath;
 	if (!FPaths::FileExists(ProjectIconBG_AutomaticImagePath))
 	{
@@ -34,7 +34,7 @@ void FPsAndroidAdaptiveIconSettingsCustomization::CustomizeDetails(IDetailLayout
 
 	// Foreground
 	const FText DescFG(LOCTEXT("AndroidAdaptiveIconForegroundLabel", "Anroid adaptive icon foreground"));
-	const FString ProjectIconFG_TargetImagePath = FPaths::ProjectPluginsDir() / TEXT("PsAndroidAdaptiveIcon") / TEXT("Resources") / TEXT("foreground.png");
+	const FString ProjectIconFG_TargetImagePath = FPaths::ProjectDir()  / TEXT("Intermediate") / TEXT("Android") / TEXT("AdaptiveIcon") / TEXT("foreground.png");
 	FString ProjectIconFG_AutomaticImagePath = ProjectIconFG_TargetImagePath;
 	if (!FPaths::FileExists(ProjectIconFG_AutomaticImagePath))
 	{
@@ -44,7 +44,7 @@ void FPsAndroidAdaptiveIconSettingsCustomization::CustomizeDetails(IDetailLayout
 
 	// Foreground round
 	const FText DescFGR(LOCTEXT("AndroidAdaptiveIconForegroundRoundLabel", "Anroid adaptive icon foreground round"));
-	const FString ProjectIconFGR_TargetImagePath = FPaths::ProjectPluginsDir() / TEXT("PsAndroidAdaptiveIcon") / TEXT("Resources") / TEXT("foreground_round.png");
+	const FString ProjectIconFGR_TargetImagePath = FPaths::ProjectDir()  / TEXT("Intermediate") / TEXT("Android") / TEXT("AdaptiveIcon") / TEXT("foreground_round.png");
 	FString ProjectIconFGR_AutomaticImagePath = ProjectIconFGR_TargetImagePath;
 	if (!FPaths::FileExists(ProjectIconFGR_AutomaticImagePath))
 	{
