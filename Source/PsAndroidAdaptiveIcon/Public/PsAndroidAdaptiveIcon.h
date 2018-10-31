@@ -10,8 +10,4 @@ public:
 	void StartupModule() override;
 	void ShutdownModule() override;
 	// End of IModuleInterface impl
-
-private:
-	UPROPERTY()
-	class UPsAndroidAdaptiveIconSettings* Settings;
 };
