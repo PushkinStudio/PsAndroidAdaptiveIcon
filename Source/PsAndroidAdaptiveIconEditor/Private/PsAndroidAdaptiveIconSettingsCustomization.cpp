@@ -23,7 +23,7 @@ TSharedRef<IDetailCustomization> FPsAndroidAdaptiveIconSettingsCustomization::Ma
 void FPsAndroidAdaptiveIconSettingsCustomization::CustomizeDetails(IDetailLayoutBuilder& DetailBuilder)
 {
 	// Background
-	const FText DescBG(LOCTEXT("AndroidAdaptiveIconBackgroundLabel", "Anroid adaptive icon background"));
+	const FText DescBG(LOCTEXT("AndroidAdaptiveIconBackgroundLabel", "Android adaptive icon background"));
 	const FString ProjectIconBG_TargetImagePath = FPaths::ProjectDir() / TEXT("Intermediate") / TEXT("Android") / TEXT("AdaptiveIcon") / TEXT("background.png");
 	FString ProjectIconBG_AutomaticImagePath = ProjectIconBG_TargetImagePath;
 	if (!FPaths::FileExists(ProjectIconBG_AutomaticImagePath))
@@ -33,7 +33,7 @@ void FPsAndroidAdaptiveIconSettingsCustomization::CustomizeDetails(IDetailLayout
 	AddIcon(DetailBuilder, DescBG, ProjectIconBG_TargetImagePath, ProjectIconBG_AutomaticImagePath);
 
 	// Foreground
-	const FText DescFG(LOCTEXT("AndroidAdaptiveIconForegroundLabel", "Anroid adaptive icon foreground"));
+	const FText DescFG(LOCTEXT("AndroidAdaptiveIconForegroundLabel", "Android adaptive icon foreground"));
 	const FString ProjectIconFG_TargetImagePath = FPaths::ProjectDir()  / TEXT("Intermediate") / TEXT("Android") / TEXT("AdaptiveIcon") / TEXT("foreground.png");
 	FString ProjectIconFG_AutomaticImagePath = ProjectIconFG_TargetImagePath;
 	if (!FPaths::FileExists(ProjectIconFG_AutomaticImagePath))
@@ -43,7 +43,7 @@ void FPsAndroidAdaptiveIconSettingsCustomization::CustomizeDetails(IDetailLayout
 	AddIcon(DetailBuilder, DescFG, ProjectIconFG_TargetImagePath, ProjectIconFG_AutomaticImagePath);
 
 	// Foreground round
-	const FText DescFGR(LOCTEXT("AndroidAdaptiveIconForegroundRoundLabel", "Anroid adaptive icon foreground round"));
+	const FText DescFGR(LOCTEXT("AndroidAdaptiveIconForegroundRoundLabel", "Android adaptive icon foreground round"));
 	const FString ProjectIconFGR_TargetImagePath = FPaths::ProjectDir()  / TEXT("Intermediate") / TEXT("Android") / TEXT("AdaptiveIcon") / TEXT("foreground_round.png");
 	FString ProjectIconFGR_AutomaticImagePath = ProjectIconFGR_TargetImagePath;
 	if (!FPaths::FileExists(ProjectIconFGR_AutomaticImagePath))
