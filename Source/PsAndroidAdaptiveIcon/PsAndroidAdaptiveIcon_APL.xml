@@ -10,6 +10,10 @@
 	</androidManifestUpdates>
 
 	<prebuildCopies>
+		<copyFile src="$S(PluginDir)/../../Resources/Defaults/background.png" dst="$S(BuildDir)/res/drawable/ic_background.png" />
+		<copyFile src="$S(PluginDir)/../../Resources/Defaults/foreground.png" dst="$S(BuildDir)/res/mipmap/ic_foreground.png" />
+		<copyFile src="$S(PluginDir)/../../Resources/Defaults/foreground_round.png" dst="$S(BuildDir)/res/mipmap/ic_foreground_round.png" />
+
 		<copyFile src="$S(BuildDir)/../AdaptiveIcon/background.png" dst="$S(BuildDir)/res/drawable/ic_background.png" />
 		<copyFile src="$S(BuildDir)/../AdaptiveIcon/foreground.png" dst="$S(BuildDir)/res/mipmap/ic_foreground.png" />
 		<copyFile src="$S(BuildDir)/../AdaptiveIcon/foreground_round.png" dst="$S(BuildDir)/res/mipmap/ic_foreground_round.png" />
